@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Member Area | HomePage</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <style>
+            .header-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                background-color:whitesmoke;
+            }
+            .corp-name-acceuil {
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                margin-left : 10%;
+                width: 250px;
+                justify-content: space-around;
+            }
+            .text {
+                font-family: sans-serif;
+                color: darkslategrey;
+            }
+            .navigation-text {
+                font-size: 12px;
+                font-weight:600;
+            }
+            .sign-up-sign-in {
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                width: 185px;
+                justify-content: space-around;
+                margin-left: 50%;
+            }
+            .current-page {
+                color:yellowgreen;
+            }
+            .welcome-container {
+                display:flex;
+                width: 100%;
+                height: 400px;
+                border: 1px solid black;
+                justify-content: center;
+                align-content:  center;
+                align-items: center;
+                background-image: url("https://ihatetomatoes.net/wp-content/uploads/2014/07/img_css3-spinning-preloader-05.png");
+            }
+            .welcome-message-container {
+                border: 2px solid;
+                border-bottom-color: cadetblue;
+                border-left-color: blue;
+                border-right-color: skyblue;
+                border-top-color: darkblue;
+                display: flex;
+                flex-direction: column;
+                height: 60%;
+                width: 60%;
+                justify-content: center;
+                align-items: center;
+            }
+            .welcome-text {
+                font-family : sans-serif;
+                font-weight:100;
+                color:white;          
+            }
+            .name {
+                font-size: 15px;
+                margin-bottom: 0px;
+                color: darkturquoise;
+            }
+            #welcome-container {
+                height: 400px; 
+                border: 1px solid black;
+                background: url("res/gradient.jpg");
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                display: flex;
+            }
+            #jumbo-message {
+                border: 2px solid;
+                border-bottom-color: aquamarine;
+                border-top-color: royalblue;
+                border-left-color: blue;
+                border-right-color: skyblue;
+                background-color: transparent;
+                width: 600px;
+                /*  height: 200px;*/
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .text-welcome {
+                color:white;
+            }
+            #name {
+                font-weight: bold;
+                font-size: 12px;
+                color:aqua;
+            }
+            #quote {
+                font-size:25px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: lighter;
+            }
+            #newsletter {
+/*
+                border: 1px dotted black;
+*/
+                height: 350px;
+                background-color: rgb(248,249,250);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            #send-email {
+                height: 35px;
+                width: 35px;
+            }
+            .email-button {
+               /* background-color: limegreen;*/
+                
+            }
+            .email-form {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+            }
+            /*#paragraph,#newsletter-title {
+                text-align: center;
+            }*/
+            
+            #fuckthisshit {
+                width: 60%;
+                text-align: center;
+            }
+            #email-input {
+                min-width: 150px;
+                max-width: 300px;
+                border-radius: 20px;
+                padding: 10px;
+                border: 0.5px solid grey;
+            }
+            .form-group {
+                display: flex;
+                justify-content: center;
+                
+            }
+            .footer {
+                background-color: black;
+                height: 50px;
+                display:flex;
+                align-items: center;
+                justify-content: space-around;
+                align-content: space-around;
+            }
+            .copyright-text {
+                color: white;
+                font-size:12px;
+                font-weight: lighter;
+            }
+            .copyright-and-shit {
+                margin-left: 50px;
+                margin-top: 18px;
+            }
+            .logo {
+                height: 20px;
+                width: 20px;
+                margin-right:10px;
+            }
+            /*.logos {
+                margin-right: -500px;
+            }*/
+            .btn {
+                margin-left: 10px;
+                border-radius: 20%;
+                padding-bottom: 2px;
+                padding-top: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">
+            EspaceMembre 
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="Member-Area-SignUP.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="Member-Area-SignIN.html">Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="container-fluid" id="welcome-container">
+            <div class="jumbotron" id="jumbo-message">
+                <div>
+                    <p class="text-welcome" id="name">HORCHANI LOL-MAN</p>
+                </div>
+                <div id="quote-div">
+                    <q class="text-welcome" id="quote">Hi, you are now connected to our MemberArea, welcome :)</q>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="newsletter">
+            <div class="container" id="fuckthisshit">
+                <div class="container" id="newsletter-title">
+                    <h2>Newsletter</h2>
+                </div>
+                <div class="container" id="paragraph">
+                    <p>Subscribe to our newsletter, to get the latest updates on our buisness :)</p>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="email" id="email-input" placeholder="Enter your email"/>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="container-fluid " style="border: 2px solid pink; height: auto; background-color: black; color: white; ">
+              <div class="row">
+                <div class="col-md-6 offset-1" style="margin-top: 10px;">  
+                  <p class="copyright-text">2018 &copy; tout les droits sont réservés. Site crée par HORCHANI WIIW. </p>
+                </div>
+                  <div class="col-md-4" style="margin-top: 5px;">
+                        <a href="#"><img class="logo" src="res/icons8_Facebook_50px.png"/></a>
+                        <a href="#"><img class="logo" src="res/icons8_Instagram_50px.png"/></a>
+                        <a href="#"><img class="logo" src="res/icons8_Twitter_50px.png"/></a>
+                        <a href="#"><img class="logo" src="res/icons8_LinkedIn_50px.png"/></a>
+                </div>  
+              </di  v>
+            </div>
+        </footer>
+        
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    </body>
+</html>

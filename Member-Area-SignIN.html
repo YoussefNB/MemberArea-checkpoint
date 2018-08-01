@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Member Area | Sign In</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+        
+        <!-- Your custom styles (optional) -->
+        <link href="../MDBootstrap/css/style.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="../MDBootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="../MDBootstrap/css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="../MDBootstrap/css/style.css" rel="stylesheet">
+        <style>
+        .logo {
+                height: 20px;
+                width: 20px;
+                margin-right:10px;
+            }
+        .copyright-text {
+                color: white;
+                font-size:12px;
+                font-weight: lighter;
+            }
+        .title {
+                margin-bottom: 20px; 
+                font-weight: lighter;  
+            }
+            .link {
+                text-decoration: none;
+                color: limegreen;
+            }
+            </style>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="index.html">
+            EspaceMembre 
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+                  <li class="nav-item">
+                    <a class="nav-item nav-link" href="Member-Area-SignUP.html">Sign Up</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-item nav-link" href="#">Sign In <span class="sr-only">(current)</span></a>
+                  </li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+            <div class="container-fluid content row">
+                <div class="image-div col-md-6" style="margin-top: 15px; margin-bottom: 15px;">
+                    <img src="res/a.png" style="width:500px; height: 500px">
+                </div>
+                <div class="form container-fluid col-md-6 col-sm-12" style="margin-top: 15px; margin-bottom: 15px;">
+                        <h2 class="title"> Sign In</h2>
+                        <div class="md-form form-group">
+                            <i class="fa fa-pen prefix"></i>
+                            <input type="text" placeholder="Pseudo" id="input-pseudo" class="form-control validate" style="width: 60%; margin-bottom: 20px;">
+                        </div>              
+                        <div class="md-form form-group">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" placeholder="Password" id="input-password" class="form-control validate" style="width: 60%; margin-bottom: 20px;">
+                        </div>
+                        <div class="form-check" style="margin-bottom: 20px;">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="checkbox" class="form-check-input" id="terms-checkbox">
+                                    <label class="form-check-label" for="terms-checkbox"> Stay connected</a></label>
+                                </div>
+                            <div class="col-md-6">
+                                    <a href="#" class="link" style="text-decoration: none;">Forgot password ?</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="button" class="btn btn-outline-success btn-lg" style="width: 70%" >Sign up</button>
+                    <!-- Modal data-toggle="modal" data-target="#exampleModalCenter"-->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Can't sign up for the following reason(s) : </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body" id="modal-text">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="or row" style="margin-top: 20px;" >
+                     <h3 style="font-weight: lighter; border: 1px solid black; padding:15px 20px; border-radius: 50%"> or</h3> 
+                    </div>
+                    <div class="or row" style="margin-top: 20px;" >
+                        <div>
+                            <button type="button" class="btn btn-lg btn-fb" style="background-color:white; color:darkblue; border: 1px solid darkblue;"><i class="fa fa-facebook"></i> Facebook</button>
+                            <button type="button" class="btn btn-lg btn-tw" style="background-color:white; color:cadetblue; border: 1px solid cadetblue;"><i class="fa fa-twitter"></i> Twitter</button>
+                        </div> 
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <p>Already have an account ? <a href="" class="link">Join us !</a></p>
+                    </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="container-fluid " style="border: 2px solid pink; height: auto; background-color: black; color: white; ">
+              <div class="row">
+                <div class="col-md-6 offset-1" style="margin-top: 10px;">  
+                  <p class="copyright-text">2018 &copy; tout les droits sont réservés. Site crée par HORCHANI WIIW. </p>
+                </div>
+                  <div class="col-md-4" style="margin-top: 5px;">
+                    <a href="#"><img class="logo" src="res/icons8_Facebook_50px.png"/></a>
+                    <a href="#"><img class="logo" src="res/icons8_Instagram_50px.png"/></a>
+                    <a href="#"><img class="logo" src="res/icons8_Twitter_50px.png"/></a>
+                    <a href="#"><img class="logo" src="res/icons8_LinkedIn_50px.png"/></a>
+                </div>  
+              </div>
+            </div>
+        </footer>
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        
+        <!-- MDB SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    </body>
+</html>
